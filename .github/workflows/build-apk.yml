@@ -16,14 +16,16 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-      - name: Configurar Gradle
-        uses: gradle/actions/setup-gradle@v4
-        with:
-          gradle-version: "8.7"
+      - name: Configurar Android SDK
+        uses: android-actions/setup-android@v3
       - name: Instalar componentes del SDK Android
         run: |
           yes | sdkmanager --licenses
           sdkmanager "platforms;android-35" "build-tools;35.0.0"
+      - name: Configurar Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.7"
       - name: Compilar APK
         run: gradle -p android assembleDebug
       - name: Publicar APK como artefacto
