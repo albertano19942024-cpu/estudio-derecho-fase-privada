@@ -38,19 +38,24 @@ h2{font-size:clamp(1.25rem,3.5vw,1.8rem);line-height:1.45;margin:12px 0 26px}
 <script>
 let questions=[],order=[],position=0,cycle=1;
 const $=id=>document.getElementById(id);
-function shuffle(n){const a=Array.from({length:n},(_,i)=>i);for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+function shuffle(n){const a=Array.from({length:n},(_,i)=>i);for(let i=n-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function newCycle(){order=shuffle(questions.length);position=0;}
+function validBank(data){return Array.isArray(data)&&data.length>0&&data.every(q=>typeof q.pregunta==='string'&&typeof q.respuesta==='string');}
+function loadBank(data,label){
+ if(!validBank(data))throw new Error('El banco no tiene el formato esperado.');
+ questions=data;cycle=1;newCycle();$('next').disabled=false;render();
+ $('status').textContent=questions.length+' preguntas cargadas desde '+label+'. Orden aleatorio, sin repeticiones dentro de cada ciclo.';
+}
 function render(){
  if(!questions.length)return;
  const q=questions[order[position]];
  $('study').className='';
- $('study').innerHTML='<div class="tag">PREGUNTA</div><h2></h2><div class="answer"><h3>RESPUESTA</h3><p></p></div>';
+ $('study').innerHTML='<div class="tag">PREGUNTA '+(q.numero?'N.º '+q.numero:'')+'</div><h2></h2><div class="answer"><h3>RESPUESTA</h3><p></p></div>';
  $('study').querySelector('h2').textContent=q.pregunta;
  $('study').querySelector('.answer p').textContent=q.respuesta;
  $('counter').textContent='Pregunta '+(position+1)+' de '+questions.length;
  $('cycle').textContent='Ciclo '+cycle;
  $('bar').style.width=((position+1)/questions.length*100)+'%';
- $('status').textContent='Preguntas cargadas correctamente. El orden es aleatorio y no se repiten dentro del mismo ciclo.';
 }
 $('next').addEventListener('click',()=>{
  if(!questions.length)return;
@@ -61,13 +66,19 @@ $('next').addEventListener('click',()=>{
 $('reset').addEventListener('click',()=>{if(!questions.length)return;cycle=1;newCycle();render();});
 $('jsonFile').addEventListener('change',async e=>{
  const file=e.target.files[0];if(!file)return;
- try{
-  const data=JSON.parse(await file.text());
-  if(!Array.isArray(data)||!data.length||!data.every(q=>typeof q.pregunta==='string'&&typeof q.respuesta==='string'))throw new Error('Formato incorrecto. Se requiere una lista con pregunta y respuesta.');
-  questions=data;cycle=1;newCycle();$('next').disabled=false;render();
- }catch(err){$('status').textContent='No se pudo cargar el archivo: '+err.message;}
+ try{loadBank(JSON.parse(await file.text()),file.name);}
+ catch(err){$('status').textContent='No se pudo cargar el archivo: '+err.message;}
  e.target.value='';
 });
+(async()=>{
+ try{
+  const response=await fetch('./preguntas.json',{cache:'no-store'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  loadBank(await response.json(),'el banco incluido en la aplicación');
+ }catch(err){
+  $('status').textContent='No se pudo cargar automáticamente el banco. Puedes importar un archivo JSON. ('+err.message+')';
+ }
+})(); 
 </script>
 </body>
 </html>
