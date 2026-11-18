@@ -1,0 +1,164 @@
+[
+  {
+    "numero": 479,
+    "pagina": 71,
+    "pregunta": "¿Cuál es la duración máxima del usufructo?",
+    "respuesta": "El usufructo que no sea vitalicio o el constituido a favor de personas jurídicas no podrá exceder de 30 años. Los usufructos sobre bienes nacionales podrán constituirse hasta por 50 años."
+  },
+  {
+    "numero": 480,
+    "pagina": 71,
+    "pregunta": "¿Puede cederse o enajenarse el usufructo?",
+    "respuesta": "Sí se puede enajenar el usufructo. (Art. 716 CC)."
+  },
+  {
+    "numero": 481,
+    "pagina": 71,
+    "pregunta": "¿Hay derecho de acrecer en el usufructo?",
+    "respuesta": "No hay derecho de acrecer, si el constituyente no lo ha establecido clara y expresamente. (Art. 708 CC)."
+  },
+  {
+    "numero": 482,
+    "pagina": 71,
+    "pregunta": "¿A qué hace referencia el derecho de acrecer?",
+    "respuesta": "Que, si se constituye usufructo a favor de varias personas y falta una de ellas, la parte de las demás será mayor. En el usufructo no hay derecho de acrecer, salvo se haya estipulado clara y expresamente."
+  },
+  {
+    "numero": 483,
+    "pagina": 71,
+    "pregunta": "¿Qué sucede si se da la cesión del usufructo a un tercero?",
+    "respuesta": "Cedido el usufructo a un tercero, el cedente y el cesionario serán solidariamente responsables al propietario de la cosa usufructuada. (Art. 717 CC)."
+  },
+  {
+    "numero": 484,
+    "pagina": 71,
+    "pregunta": "¿Se puede constituir servidumbre en el usufructo?",
+    "respuesta": "Podrá hacerlo, siempre que no sea perpetua; las que constituya cesarán al terminar el usufructo. (Art. 719 CC)."
+  },
+  {
+    "numero": 485,
+    "pagina": 71,
+    "pregunta": "¿Quién paga las cargas en el usufructo?",
+    "respuesta": "Si el usufructo es a título gratuito, el usufructuario está obligado a soportar todos los impuestos, contribuciones y pagos por servicios que pesen sobre la cosa usufructuada. Si el usufructo es a título oneroso, está obligado únicamente al pago por servicios para el goce de la cosa usufructuada. (Art. 731 CC)."
+  },
+  {
+    "numero": 486,
+    "pagina": 71,
+    "pregunta": "¿Qué reparaciones se pueden realizar sobre el bien usufructuado?",
+    "respuesta": "i. Ordinarias (Art. 726 CC): son aquellas que son indispensables para la conservación de la cosa. ii. Extraordinarias (Art. 727 CC): las reparaciones extraordinarias serán a cargo del usufructuante. Son extraordinarias las que se necesitan para restablecer o reintegrar los bienes que hayan arruinado por vejez, caso fortuito o accidente no imputable al usufructuario."
+  },
+  {
+    "numero": 487,
+    "pagina": 71,
+    "pregunta": "¿Cómo se extingue el usufructo?",
+    "respuesta": "i. Por muerte del usufructuario. ii. Por vencimiento del plazo por el que estaba constituido o por realizarse la condición a que estaba sujeto. iii. Por la reunión de calidad de usufructuario y usufructuante en la misma persona."
+  },
+  {
+    "numero": 367,
+    "pagina": 429,
+    "pregunta": "¿Qué impuesto paga la primera venta o permuta de bienes inmuebles?",
+    "respuesta": "Impuesto al valor agregado. (Art. 3 #8 Ley del IVA)."
+  },
+  {
+    "numero": 368,
+    "pagina": 429,
+    "pregunta": "¿Qué impuesto paga la donación de bienes inmuebles?",
+    "respuesta": "Impuesto al valor agregado. (Art. 3 #9 Ley del IVA)."
+  },
+  {
+    "numero": 369,
+    "pagina": 429,
+    "pregunta": "¿Qué impuesto paga la aportación de un inmueble a una sociedad?",
+    "respuesta": "Está exento del pago del impuesto al valor agregado. (Art. 7 #3, inciso d) Ley del IVA)."
+  },
+  {
+    "numero": 370,
+    "pagina": 429,
+    "pregunta": "¿En qué casos está exenta una primera venta del pago de IVA?",
+    "respuesta": "Cuando se trate de vivienda con un máximo de ochenta metros cuadrados de construcción cuyo valor no exceda de doscientos cincuenta mil quetzales; y lotes urbanizados que tengan servicios básicos con un área de ciento veinte metros cuadrados cuyo valor no exceda de ciento veinte mil quetzales. Además el adquirente deberá acreditar que él y su núcleo familiar carecen de vivienda propia o de otros inmuebles. (Art. 7, #12 Ley del IVA)."
+  },
+  {
+    "numero": 371,
+    "pagina": 429,
+    "pregunta": "¿A quién se le considera núcleo familiar para efectos de la exención de IVA?",
+    "respuesta": "Padre, madre, hijos solteros, así como hijo casado y su padre o madre soltera. (Art. 7 Reglamento de la Ley del IVA)."
+  },
+  {
+    "numero": 372,
+    "pagina": 429,
+    "pregunta": "¿Qué contratos civiles pagan IVA con factura?",
+    "respuesta": "i. Arrendamiento (Art. 2 #4 Ley del IVA). ii. Servicios profesionales (Art. 2 #2 Ley del IVA). iii. Contrato de obra (Art. 2 #2 Ley del IVA). iv. Primera compraventa de bien inmueble cuando el enajenante es una entidad cuya actividad es la construcción o venta de inmuebles (Art. 57 Ley del IVA)."
+  },
+  {
+    "numero": 373,
+    "pagina": 429,
+    "pregunta": "¿Cuál es la base imponible para el pago del IVA en primera venta de bienes inmuebles?",
+    "respuesta": "Se constituye por el precio mayor entre: i. Precio de venta consignado en la factura. ii. Precio establecido en la escritura pública. iii. El que conste en matrícula fiscal. (Art. 56 Ley del IVA)."
+  },
+  {
+    "numero": 374,
+    "pagina": 429,
+    "pregunta": "¿Dónde consta el pago del impuesto de IVA en la enajenación de inmuebles afectos?",
+    "respuesta": "Se debe consignar en la razón final del testimonio de la escritura traslativa de dominio. (Art. 57 Ley del IVA)."
+  },
+  {
+    "numero": 157,
+    "pagina": 182,
+    "pregunta": "¿Qué es el contrainterrogatorio?",
+    "respuesta": "Es la facultad que tiene el absolvente de realizar preguntas al articulante. (Art. 136 CPCYM)."
+  },
+  {
+    "numero": 158,
+    "pagina": 182,
+    "pregunta": "¿Cómo se valora la confesión prestada legalmente?",
+    "respuesta": "Se valora mediante el sistema legal o tasado, ya que la ley indica que la confesión prestada legalmente produce plena prueba. (Art. 139 CPCYM)."
+  },
+  {
+    "numero": 159,
+    "pagina": 182,
+    "pregunta": "¿Qué procede si una persona confiesa en la declaración de parte?",
+    "respuesta": "A solicitud del juez se dicta sentencia. (Art. 140 CPCYM)."
+  },
+  {
+    "numero": 160,
+    "pagina": 182,
+    "pregunta": "¿Qué es la confesión sin posiciones?",
+    "respuesta": "Surge en el caso que una parte confiese, pero no al absolver posiciones sino en la demanda o en otro estado del proceso, pero debe ratificarse para que quede perfecta. (Art. 141 CPCYM)."
+  },
+  {
+    "numero": 161,
+    "pagina": 182,
+    "pregunta": "¿Es obligatorio asistir a declarar como testigo?",
+    "respuesta": "Sí, los que tengan conocimiento de los hechos que las partes deben probar, están obligados a declarar como testigos. (Art. 142 CPCYM)."
+  },
+  {
+    "numero": 162,
+    "pagina": 182,
+    "pregunta": "¿Qué sucede si las personas que estén obligadas a declarar se negaren a hacerlo sin justa causa?",
+    "respuesta": "Se les podrá imponer los apremios legales."
+  },
+  {
+    "numero": 163,
+    "pagina": 182,
+    "pregunta": "¿Cuántos testigos puede presentar cada litigante?",
+    "respuesta": "Hasta cinco testigos por cada uno de los hechos que deban ser acreditados. (Art. 142 CPCYM)."
+  },
+  {
+    "numero": 164,
+    "pagina": 182,
+    "pregunta": "¿Quiénes tienen aptitud para ser testigos?",
+    "respuesta": "Los mayores de 16 años de edad. (Art. 143 CPCYM)."
+  },
+  {
+    "numero": 165,
+    "pagina": 182,
+    "pregunta": "¿Quiénes no podrán ser testigos?",
+    "respuesta": "Los parientes de las partes. (Art. 144 CPCYM)."
+  },
+  {
+    "numero": 166,
+    "pagina": 182,
+    "pregunta": "¿En qué casos sí se podrá recibir la declaración de esos testigos?",
+    "respuesta": "En el caso que hayan sido propuestos por ambas partes, así como en procesos sobre edad, filiación, estado, parentesco o derechos de familia. (Art. 144 CPCYM)."
+  }
+]
