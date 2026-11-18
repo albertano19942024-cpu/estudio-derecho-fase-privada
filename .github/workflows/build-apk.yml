@@ -8,9 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ANDROID_HOME: /usr/local/lib/android/sdk
-      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
     steps:
       - name: Descargar código
         uses: actions/checkout@v4
@@ -19,11 +16,17 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-      - name: Preparar Android SDK preinstalado
+      - name: Localizar Android SDK
+        shell: bash
         run: |
-          echo "$ANDROID_HOME/cmdline-tools/16.0/bin" >> "$GITHUB_PATH"
-          echo "$ANDROID_HOME/platform-tools" >> "$GITHUB_PATH"
-          "$ANDROID_HOME/cmdline-tools/16.0/bin/sdkmanager" --version
+          SDKMANAGER="$(find /usr/local/lib/android /opt -type f -name sdkmanager 2>/dev/null | head -n 1)"
+          if [ -z "$SDKMANAGER" ]; then echo "No se encontró sdkmanager"; exit 1; fi
+          SDK_ROOT="$(dirname "$(dirname "$(dirname "$SDKMANAGER")")")"
+          echo "ANDROID_HOME=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "ANDROID_SDK_ROOT=$SDK_ROOT" >> "$GITHUB_ENV"
+          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
+          echo "$SDKMANAGER"
+          "$SDKMANAGER" --version
       - name: Instalar componentes del SDK Android
         run: |
           yes | sdkmanager --licenses
